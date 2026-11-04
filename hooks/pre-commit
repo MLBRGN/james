@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# pre-commit — Lint/inspect staged changes before a commit is created.
+# When: On `git commit`, before the message editor opens.
+# Args: None. Operates on the staged (index) contents.
+# Exit: Non-zero aborts the commit.
+
+hooks=(
+    "composer audit"
+    "npm audit"
+    "composer validate --strict"
+    "composer test:pint"
+)
+
+for hook in "${hooks[@]}"; do
+    echo $hook
+    msg=$(eval "$hook" 2>&1)
+    status=$?
+    if [ $status -gt 0 ]; then
+        echo $msg
+
+        exit $status
+    fi
+done
+
+exit 0

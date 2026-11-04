@@ -1,0 +1,17 @@
+{
+    "name": "mlbrgn/james",
+    "description": "Captain hook's hooks",
+    "keywords": [
+        "git",
+        "hooks"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pieter Hustinx",
+            "email": "pieter.hustinx@mlbrgn.nl"
+        }
+    ],
+    "require": {}
+}

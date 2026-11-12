@@ -20,6 +20,6 @@ Then `composer require --dev mlbrgn/james:dev-main`
 And add also
 ```json lines
 "post-update-cmd": [
-  "vendor/mlbrgn/james/james"
+  "vendor/bin/james"
 ],
 ```

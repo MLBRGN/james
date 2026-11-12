@@ -13,5 +13,8 @@
             "email": "pieter.hustinx@mlbrgn.nl"
         }
     ],
+    "bin": [
+        "james"
+    ],
     "require": {}
 }

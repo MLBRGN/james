@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 echo "Updating hooks"
-cp hooks/* .git/hooks
+cp vendor/mlbrgn/james/hooks/* .git/hooks

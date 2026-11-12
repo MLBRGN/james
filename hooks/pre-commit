@@ -12,7 +12,6 @@ hooks=(
 )
 
 for hook in "${hooks[@]}"; do
-    echo $hook
     msg=$(eval "$hook" 2>&1)
     status=$?
     if [ $status -gt 0 ]; then

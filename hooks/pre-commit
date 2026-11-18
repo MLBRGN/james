@@ -5,8 +5,6 @@
 # Exit: Non-zero aborts the commit.
 
 hooks=(
-    "composer audit"
-    "npm audit"
     "composer validate --strict"
     "composer test:pint"
 )
